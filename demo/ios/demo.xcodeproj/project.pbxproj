@@ -36,6 +36,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* demoTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8808D04F1EB8CC8500442690 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8808D04E1EB8CC8500442690 /* SecondViewController.swift */; };
 		8809E8571EB88B7C00E1794F /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E8561EB88B7C00E1794F /* CalendarManager.swift */; };
 		8809E8721EB88BF000E1794F /* CalendarManageBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 8809E8711EB88BF000E1794F /* CalendarManageBridge.m */; };
 		8809E8741EB89B4100E1794F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809E8731EB89B4100E1794F /* FirstViewController.swift */; };
@@ -258,6 +259,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8808D04E1EB8CC8500442690 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		8809E8551EB88B7C00E1794F /* demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "demo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8809E8561EB88B7C00E1794F /* CalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
 		8809E8711EB88BF000E1794F /* CalendarManageBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarManageBridge.m; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				8809E8551EB88B7C00E1794F /* demo-Bridging-Header.h */,
 				8809E8711EB88BF000E1794F /* CalendarManageBridge.m */,
 				8809E8731EB89B4100E1794F /* FirstViewController.swift */,
+				8808D04E1EB8CC8500442690 /* SecondViewController.swift */,
 			);
 			name = demo;
 			sourceTree = "<group>";
@@ -919,6 +922,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8808D04F1EB8CC8500442690 /* SecondViewController.swift in Sources */,
 				8809E8741EB89B4100E1794F /* FirstViewController.swift in Sources */,
 				8809E8571EB88B7C00E1794F /* CalendarManager.swift in Sources */,
 				8809E8721EB88BF000E1794F /* CalendarManageBridge.m in Sources */,

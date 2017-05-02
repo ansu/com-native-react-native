@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 // CalendarManager.swift
 
@@ -18,28 +18,25 @@ class CalendarManager: NSObject {
 //    return ["EventReminder"];
 //  }
   
+  @objc func methodQueue() ->  DispatchQueue {
+    return DispatchQueue.main
+  }
   
   @objc(addEvent:location:date:)
   func addEvent(name: String, location: String, date: NSNumber) -> Void {
     // Date is ready to use!
     NSLog("%@ %@ %@", name, location, date)
+    
+    
   }
-//  @objc func addEvent(_ name: String, location: String, date: NSNumber, callback: RCTResponseSenderBlock ) -> Void {
-//    // Date is ready to use!
-//    NSLog("%@ %@ %@", name, location, date)
-//    let ret:[String:Any] =  ["name": name, "location": location, "date" : date]
-//    callback([ret])
-//    self.sendEvent(withName: "EventReminder", body: ret)
-//   
-//  }
   
-//  @objc override func constantsToExport() -> [String : Any]! {
-//    return [
-//      "x": 1,
-//      "y": 2,
-//      "z": "Arbitrary string"
-//    ]
-//  }
+  @objc func pushVC(){
+    let firstVC = SecondViewController()
+    let navVC:UINavigationController =  UIApplication.shared.delegate?.window??.rootViewController as! UINavigationController
+    navVC.pushViewController(firstVC, animated: true)
+   // UIApplication.shared.delegate?.window??.rootViewController?.present(firstVC, animated: true, completion: nil)
+  }
+
   
   
 }

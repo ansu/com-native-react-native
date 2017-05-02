@@ -11,6 +11,7 @@
    Text,
    View
  } from 'react-native';
+ import Button from './src/components/Button';
 
  import { NativeModules, NativeEventEmitter } from 'react-native';
  console.log('Calendar Manager', NativeModules.CalendarManager);
@@ -43,6 +44,10 @@
            Press Cmd+R to reload,{'\n'}
            Cmd+D or shake for dev menu
          </Text>
+
+         <Button onPress={ () => NativeModules.CalendarManager.pushVC()}>
+           Push VC
+         </Button>
        </View>
      );
    }

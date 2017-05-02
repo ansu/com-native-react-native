@@ -8,7 +8,7 @@
  */
 
 #import "AppDelegate.h"
-
+#import "demo-Swift.h"
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -16,22 +16,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  NSURL *jsCodeLocation;
-
-  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
-
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
-                                                      moduleName:@"demo"
-                                               initialProperties:nil
-                                                   launchOptions:launchOptions];
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
+//  NSURL *jsCodeLocation;
+//
+//  jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
+//
+//  RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
+//                                                      moduleName:@"demo"
+//                                               initialProperties:nil
+//                                                   launchOptions:launchOptions];
+//  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
+//
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *rootViewController = [UIViewController new];
-  rootViewController.view = rootView;
-  self.window.rootViewController = rootViewController;
+  FirstViewController *firstVC = [FirstViewController new];
+
+  UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController: firstVC];
+
+  
+//  UIViewController *rootViewController = [UIViewController new];
+//  rootViewController.view = firstVC;
+  self.window.rootViewController = rootController;
   [self.window makeKeyAndVisible];
   return YES;
 }
 
+- (void)goToReactNative {
+  
+  [self.window.rootViewController dismissViewControllerAnimated:TRUE completion:nil];
+  
+}
 @end
